@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111827;
+  --color-secondary: #2563EB;
+  --text-primary: #111827;
+  --text-secondary: #2563EB;
+}
+
+/* Extra custom classes */
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.light {
+  @apply bg-white text-black;
+}
