@@ -6,7 +6,7 @@ const ManageBlog = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("https://meta-blog-app-backend-olive.vercel.app/blogs")
+    fetch("https://syntecxhub-blog-application-3y4c.vercel.app/blogs")
       .then((response) => response.json())
       .then((data) => setBlogs(data.blogs))
       .catch((error) => console.error("Error fetching blog data: " + error));
@@ -15,7 +15,7 @@ const ManageBlog = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this blog?")) {
       try {
-        await axios.delete(`https://meta-blog-app-backend-olive.vercel.app/blogs/${id}`);
+        await axios.delete(`https://syntecxhub-blog-application-3y4c.vercel.app/blogs/${id}`);
         setBlogs(blogs.filter((blog) => blog._id !== id));
 
         alert("Blog deleted successfully");

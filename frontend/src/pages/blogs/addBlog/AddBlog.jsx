@@ -24,7 +24,7 @@ const AddBlog = () => {
     // call api fro posting data to database
     try {
       const response = await axios.post(
-        `https://meta-blog-app-backend-olive.vercel.app/blogs/add-post`,
+        `https://syntecxhub-blog-application-3y4c.vercel.app/blogs/add-post`,
         blogData
       )
 

@@ -24,7 +24,7 @@ const UpdateBlog = () => {
       useEffect(() => {
           const fetchSingleBlog = async () => {
             try {
-              const response = await axios.get(`https://meta-blog-app-backend-olive.vercel.app/blogs/${id}`);
+              const response = await axios.get(`https://syntecxhub-blog-application-3y4c.vercel.app/blogs/${id}`);
 
               const blog = response.data.blog;
               setValue("title", blog?.title);
@@ -57,7 +57,7 @@ const UpdateBlog = () => {
         // call api for posting data to database 
         try {
           const response = await axios.put(
-            `https://meta-blog-app-backend-olive.vercel.app/blogs/${id}`,
+            `https://syntecxhub-blog-application-3y4c.vercel.app/blogs/${id}`,
             blogData
           );
 

@@ -16,7 +16,9 @@ dotenv.config();
 // middleware
 app.use(express.json());
 app.use(cors({
-  origin:"*"
+  origin:"https://syntecxhub-blog-application-zeta.vercel.app/",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
 }));
 
 import router from "./src/routes/blog.routes.js";

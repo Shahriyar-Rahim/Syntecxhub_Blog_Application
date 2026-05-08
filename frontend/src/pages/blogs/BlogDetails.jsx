@@ -18,7 +18,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`https://meta-blog-app-backend-olive.vercel.app/blogs/${id}`);
+        const response = await axios.get(`https://syntecxhub-blog-application-3y4c.vercel.app/blogs/${id}`);
         setBlog(response.data.blog);
         setIsLoading(false);
       } catch (error) {

@@ -13,7 +13,7 @@ const BlogList = () => {
 
   // Update your useEffect to handle the "finally" state
   useEffect(() => {
-    fetch("https://meta-blog-app-backend-olive.vercel.app/blogs")
+    fetch("https://syntecxhub-blog-application-3y4c.vercel.app/blogs")
       .then((response) => {
         if (!response.ok) throw new Error("Network response was not ok");
         return response.json();

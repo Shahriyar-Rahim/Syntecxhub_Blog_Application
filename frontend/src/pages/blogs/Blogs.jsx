@@ -5,7 +5,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const Blogs = () => {
   const {darkMode, setDarkMode} = useContext(ThemeContext);
-  console.log("Theme from blog page", darkMode);
+  // console.log("Theme from blog page", darkMode);
   return (
     <section className='container max-w-7xl mx-auto px-4 py-3'>
         <Banner />
